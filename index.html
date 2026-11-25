@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Purificación Ruiz · Salón de belleza en Rute</title>
+<meta name="description" content="Peluquería, estética, uñas, maquillaje y jornadas de láser de alejandrita en Rute (Córdoba). Pide tu cita por WhatsApp.">
+<link rel="canonical" href="https://purificacionruiz.es/">
+<link rel="icon" type="image/png" href="logo.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Purificación Ruiz · Salón de belleza">
+<meta property="og:title" content="Purificación Ruiz · Salón de belleza en Rute">
+<meta property="og:description" content="Peluquería, estética, uñas, maquillaje y láser en Rute. Pide tu cita por WhatsApp.">
+<meta property="og:url" content="https://purificacionruiz.es/">
+<meta property="og:image" content="https://purificacionruiz.es/tocadores.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BeautySalon","name":"Purificación Ruiz · Salón de belleza",
+"url":"https://purificacionruiz.es/","telephone":"+34676266872","image":"https://purificacionruiz.es/tocadores.jpg",
+"address":{"@type":"PostalAddress","streetAddress":"C/ Luis Ocaña, 8, local","postalCode":"14960","addressLocality":"Rute","addressRegion":"Córdoba","addressCountry":"ES"},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Friday"],"opens":"09:00","closes":"14:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Friday"],"opens":"16:00","closes":"20:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"09:00","closes":"14:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:00","closes":"14:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"16:00","closes":"19:00"}],
+"sameAs":["https://www.instagram.com/purificacion.ruiz.belleza/","https://www.facebook.com/purificacionruizbelleza"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Albert+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Nórdico cálido, sacado del propio salón: paredes blanco roto, suelo y puertas de roble claro,
+     negro mate en espejos y sillones, y la pared verde oliva como único acento.
+     Layout: columnas amplias, mucho aire, líneas finas; el espejo redondo con su balda de roble como forma protagonista. */
+  --lino: #F3EFE7;        /* fondo arena claro */
+  --abedul: #E9E2D6;      /* superficies arena */
+  --roble: #B8946F;       /* suelo y puertas */
+  --carbon: #1C1B19;      /* negro mate */
+  --gris: #5E5A54;        /* texto secundario */
+  --rosa: #5C5F44;        /* acento: verde oliva de la pared */
+  --rosa-suave: #DCDCCA;  /* oliva muy suave */
+  --display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --body: "Albert Sans", "Helvetica Neue", Arial, sans-serif;
+  --linea: 1px solid rgba(168,138,109,.38);
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+body {
+  margin: 0; background: var(--lino); color: var(--carbon);
+  font-family: var(--body); font-weight: 300; font-size: 17px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--rosa); outline-offset: 3px;
+}
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 48px); }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+.label {
+  font-family: var(--body); font-size: 12px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: #7A5C3D;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px;
+  font-family: var(--body); font-size: 15px; font-weight: 400; letter-spacing: .04em; text-decoration: none; cursor: pointer;
+  border: 1px solid var(--carbon); background: var(--carbon); color: var(--lino); transition: background .25s, color .25s;
+}
+.btn:hover { background: var(--rosa); border-color: var(--rosa); }
+.btn.ghost { background: transparent; color: var(--carbon); }
+.btn.ghost:hover { background: var(--abedul); border-color: var(--carbon); }
+
+/* Cabecera */
+header { border-bottom: var(--linea); }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 18px; }
+.brand { text-decoration: none; display: flex; flex-direction: column; line-height: 1; }
+.brand b { font-family: var(--display); font-style: italic; font-weight: 400; font-size: 30px; letter-spacing: 0; }
+.brand span { font-size: 10.5px; letter-spacing: .3em; text-transform: uppercase; color: var(--gris); margin-top: 6px; }
+nav { display: flex; gap: 28px; align-items: center; }
+nav a { text-decoration: none; font-size: 14px; letter-spacing: .08em; color: var(--gris); }
+nav a:hover { color: var(--carbon); }
+nav .btn { padding: 10px 18px; font-size: 14px; color: var(--lino); }
+@media (max-width: 760px) { nav a:not(.btn) { display: none; } }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(28px, 6vw, 80px); align-items: end; padding-block: clamp(40px, 7vw, 88px) clamp(40px, 6vw, 72px); }
+.hero h1 { font-size: clamp(52px, 8vw, 112px); line-height: .94; font-weight: 400; margin: 18px 0 26px; }
+.hero h1 em { font-style: italic; color: var(--rosa); }
+.hero p.lead { max-width: 30em; color: var(--gris); font-size: 18px; margin: 0 0 32px; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border: var(--linea); border-radius: 999px; font-size: 14px; color: var(--gris); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--roble); }
+.chip.open .dot { background: #6E7152; box-shadow: 0 0 0 4px rgba(110,113,82,.2); }
+.chip.closed .dot { background: var(--rosa); }
+.espejo { display: flex; flex-direction: column; align-items: center; gap: 0; }
+.espejo .circulo { width: 100%; max-width: 460px; aspect-ratio: 1; border-radius: 50%; border: 5px solid var(--carbon); overflow: hidden; background: var(--abedul); box-shadow: 0 30px 60px -30px rgba(31,29,27,.35); }
+.espejo img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 30%; display: block; }
+.espejo .balda { width: 78%; max-width: 360px; height: 14px; margin-top: 26px; border-radius: 2px; background: linear-gradient(180deg, #CDB08F, #B8946F); box-shadow: 0 8px 14px -8px rgba(31,29,27,.4); }
+.espejo .pie { margin-top: 18px; font-size: 12px; letter-spacing: .26em; text-transform: uppercase; color: var(--gris); }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; } .espejo .circulo { max-width: 340px; } }
+
+/* Aviso láser */
+.aviso { background: var(--abedul); border-top: var(--linea); border-bottom: var(--linea); }
+.aviso .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-top: 22px; padding-bottom: 22px; }
+.aviso p { margin: 0; font-size: 17px; }
+.aviso strong { font-family: var(--display); font-weight: 500; font-style: italic; font-size: 24px; }
+.aviso a { font-size: 15px; letter-spacing: .04em; text-underline-offset: 5px; }
+
+/* Secciones */
+section.block { padding: clamp(56px, 8vw, 104px) 0; }
+.head { display: grid; grid-template-columns: 1fr 1.4fr; gap: 24px 64px; align-items: end; margin-bottom: 48px; }
+.head h2 { font-size: clamp(40px, 5.4vw, 68px); line-height: 1; font-weight: 400; margin-top: 12px; }
+.head p { margin: 0; color: var(--gris); max-width: 34em; }
+@media (max-width: 760px) { .head { grid-template-columns: 1fr; } }
+
+/* Servicios */
+.servicios { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); border-top: var(--linea); }
+.serv { padding: 28px 28px 32px 0; border-bottom: var(--linea); display: flex; flex-direction: column; gap: 12px; }
+.serv:not(:nth-child(3n+1)) { padding-left: 28px; border-left: var(--linea); }
+.serv h3 { font-size: 30px; font-weight: 400; }
+.serv ul { list-style: none; padding: 0; margin: 0; color: var(--gris); font-size: 15.5px; }
+.serv li { padding: 3px 0; }
+.serv .pedir { margin-top: auto; padding-top: 10px; align-self: flex-start; background: none; border: 0; padding-left: 0; font-family: var(--body); font-size: 14px; letter-spacing: .06em; color: var(--carbon); text-decoration: underline; text-underline-offset: 5px; text-decoration-color: var(--roble); cursor: pointer; }
+.serv .pedir:hover { color: var(--rosa); }
+.serv.laser { background: var(--rosa-suave); padding-right: 28px; }
+.serv.laser .label { color: var(--rosa); }
+@media (max-width: 900px) {
+  .servicios { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .serv:not(:nth-child(3n+1)) { padding-left: 0; border-left: 0; }
+  .serv:nth-child(2n) { padding-left: 24px; border-left: var(--linea); }
+}
+@media (max-width: 560px) {
+  .servicios { grid-template-columns: 1fr; }
+  .serv:nth-child(2n) { padding-left: 0; border-left: 0; }
+  .serv.laser { padding-left: 20px; }
+}
+
+
+/* El salón */
+.galeria-wrap { position: relative; }
+.galeria { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; }
+.galeria figure { flex: 0 0 auto; margin: 0; scroll-snap-align: start; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.galeria img { height: clamp(300px, 42vw, 460px); width: auto; display: block; border-radius: 4px; background: var(--abedul); }
+.galeria figure.redonda img { border-radius: 999px 999px 4px 4px; }
+.galeria figcaption { font-size: 14px; letter-spacing: .06em; color: var(--gris); }
+.galeria figcaption b { font-family: var(--display); font-weight: 400; font-style: italic; font-size: 22px; color: var(--carbon); margin-right: 8px; letter-spacing: 0; }
+.flechas { display: flex; gap: 10px; }
+.flechas button { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--carbon); background: transparent; color: var(--carbon); font-size: 18px; cursor: pointer; }
+.flechas button:hover { background: var(--carbon); color: var(--lino); }
+
+/* Horario */
+.horario { background: var(--abedul); }
+.semana { border-top: var(--linea); }
+.dia { display: grid; grid-template-columns: 130px 1fr 170px; gap: 20px; align-items: center; padding: 16px 0; border-bottom: var(--linea); }
+.dia .nom { font-family: var(--display); font-size: 24px; }
+.dia .horas { font-size: 15px; color: var(--gris); text-align: right; font-variant-numeric: tabular-nums; }
+.barra { position: relative; height: 10px; border-radius: 999px; background: rgba(168,138,109,.14); }
+.tramo { position: absolute; top: 0; bottom: 0; border-radius: 999px; background: var(--roble); }
+.dia.hoy .nom::after { content: "hoy"; font-family: var(--body); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--rosa); margin-left: 10px; vertical-align: middle; }
+.dia.hoy .tramo { background: var(--rosa); }
+.dia.cerrado .nom { color: var(--gris); }
+.eje { display: grid; grid-template-columns: 130px 1fr 170px; gap: 20px; padding-top: 10px; }
+.eje .marcas { position: relative; height: 18px; font-size: 12px; color: var(--gris); font-variant-numeric: tabular-nums; }
+.eje .marcas span { position: absolute; transform: translateX(-50%); }
+.nota { margin-top: 26px; color: var(--gris); font-size: 15px; }
+@media (max-width: 640px) {
+  .dia { grid-template-columns: 1fr auto; }
+  .dia .barra { grid-column: 1 / -1; order: 3; }
+  .eje { display: none; }
+}
+
+/* Cita */
+.cita-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+.pasos { list-style: none; padding: 0; margin: 28px 0 0; counter-reset: p; }
+.pasos li { counter-increment: p; display: grid; grid-template-columns: 42px 1fr; gap: 6px; padding: 14px 0; border-top: var(--linea); color: var(--gris); font-size: 16px; }
+.pasos li::before { content: counter(p); font-family: var(--display); font-style: italic; font-size: 26px; color: var(--roble); line-height: 1; }
+.tel { margin-top: 26px; font-size: 16px; color: var(--gris); }
+.tel a { color: var(--carbon); font-variant-numeric: tabular-nums; }
+form { background: #FBF8F4; border: var(--linea); border-radius: 6px; padding: clamp(22px, 3.4vw, 40px); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.campo { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.campo.full { grid-column: 1 / -1; }
+label, legend { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--gris); }
+input, select, textarea {
+  font: inherit; font-size: 16px; color: var(--carbon); background: var(--lino); border: 1px solid rgba(168,138,109,.5); border-radius: 4px; padding: 12px 14px; width: 100%;
+}
+textarea { resize: vertical; min-height: 92px; }
+fieldset { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 7px; }
+.franjas { display: flex; gap: 8px; }
+.franjas label { position: relative; flex: 1;text-transform: none; letter-spacing: .02em; font-weight: 400; font-size: 15px; color: var(--carbon); }
+.franjas input { position: absolute; opacity: 0; pointer-events: none; }
+.franjas span { display: block; text-align: center; padding: 11px 8px; border: 1px solid rgba(168,138,109,.5); border-radius: 4px; cursor: pointer; background: var(--lino); }
+.franjas input:checked + span { background: var(--carbon); color: var(--lino); border-color: var(--carbon); }
+.franjas input:focus-visible + span { outline: 2px solid var(--rosa); outline-offset: 2px; }
+.franjas input:disabled + span { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+.aviso-campo { font-size: 14px; color: var(--rosa); min-height: 1.2em; margin: 0; }
+.enviar { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.resultado { grid-column: 1 / -1; display: none; border-top: var(--linea); padding-top: 20px; }
+.resultado.on { display: block; }
+.resultado pre { white-space: pre-wrap; font-family: var(--body); font-size: 15px; background: var(--lino); border-radius: 4px; padding: 14px 16px; margin: 10px 0 14px; color: var(--carbon); }
+.resultado .acciones { display: flex; flex-wrap: wrap; gap: 10px; }
+.mini { font-size: 13.5px; color: var(--gris); margin: 10px 0 0; }
+@media (max-width: 860px) { .cita-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { form { grid-template-columns: 1fr; } }
+
+/* Opiniones */
+.opiniones { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0; border-top: var(--linea); }
+.op { padding: 30px 30px 6px 0; }
+.op + .op { padding-left: 30px; border-left: var(--linea); }
+.op blockquote { margin: 0 0 16px; font-family: var(--display); font-style: italic; font-size: 26px; line-height: 1.25; }
+.op cite { font-style: normal; font-size: 14px; letter-spacing: .06em; color: var(--gris); }
+.nota-google { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.nota-google b { font-family: var(--display); font-weight: 400; font-size: 64px; line-height: 1; }
+@media (max-width: 800px) { .opiniones { grid-template-columns: 1fr; } .op + .op { padding-left: 0; border-left: 0; border-top: var(--linea); } .op { padding-right: 0; } }
+
+/* Dónde */
+.donde { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 80px); align-items: center; }
+.plano { aspect-ratio: 5 / 4; border-radius: 6px; background: var(--abedul); border: var(--linea); position: relative; overflow: hidden; }
+.plano svg { width: 100%; height: 100%; display: block; }
+.dir { font-family: var(--display); font-size: clamp(30px, 3.6vw, 44px); line-height: 1.1; margin: 14px 0 18px; }
+.lista-datos { list-style: none; padding: 0; margin: 0 0 28px; color: var(--gris); }
+.lista-datos li { padding: 8px 0; border-top: var(--linea); }
+@media (max-width: 800px) { .donde { grid-template-columns: 1fr; } }
+
+footer { border-top: var(--linea); padding: 32px 0 44px; color: var(--gris); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 32px; justify-content: space-between; align-items: center; }
+footer .brand b { font-size: 24px; color: var(--carbon); }
+footer nav a { font-size: 13px; }
+
+@keyframes sube { from { opacity: .001; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.hero > div:first-child > * { animation: sube .9s cubic-bezier(.2,.7,.2,1) both; }
+.hero > div:first-child > *:nth-child(2) { animation-delay: .08s; }
+.hero > div:first-child > *:nth-child(3) { animation-delay: .16s; }
+.hero > div:first-child > *:nth-child(4) { animation-delay: .24s; }
+.hero > div:first-child > *:nth-child(5) { animation-delay: .32s; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap top">
+    <a class="brand" href="#inicio" aria-label="Purificación Ruiz, salón de belleza. Inicio">
+      <img src="logo.png" alt="" width="731" height="274" style="height:58px;width:auto;display:block">
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#horario">Horario</a>
+      <a href="#salon">El salón</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#donde">Dónde estamos</a>
+      <a class="btn" href="#cita">Pedir cita</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap hero">
+    <div>
+      <span class="label">Peluquería y belleza en Rute</span>
+      <h1>Buenas manos, <em>sin prisas.</em></h1>
+      <p class="lead">Peluquería, estética, uñas y maquillaje con cita previa, en un salón luminoso y tranquilo de la calle Luis Ocaña. Te escuchamos primero y trabajamos después.</p>
+      <div class="ctas">
+        <a class="btn" href="#cita">Pedir cita</a>
+        <a class="btn ghost" href="#servicios">Ver servicios</a>
+      </div>
+      <div class="chips">
+        <span class="chip" id="estado"><span class="dot"></span><span id="estado-txt">Martes a viernes, con cita</span></span>
+        <span class="chip"><span class="dot"></span>4,9 en Google · 22 opiniones</span>
+      </div>
+    </div>
+    <figure class="espejo" style="margin:0">
+      <div class="circulo"><img src="flores-logo.jpg" alt="Recepción del salón: flores secas en un jarrón de cristal y el logo de Purificación Ruiz en la pared verde oliva" width="1050" height="1400"></div>
+      <div class="balda" aria-hidden="true"></div>
+      <figcaption class="pie">Calle Luis Ocaña, 8 · Rute</figcaption>
+    </figure>
+  </div>
+
+  <div class="aviso" id="aviso-laser">
+    <div class="wrap">
+      <p><span class="label">Depilación láser de alejandrita</span><br><strong id="laser-fecha">Próxima jornada: martes 1 de diciembre</strong></p>
+      <a href="#cita" data-servicio="Depilación láser de alejandrita">Reservar hueco para el láser</a>
+    </div>
+  </div>
+
+  <section class="block" id="servicios">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Servicios</span><h2>Lo que hacemos</h2></div>
+        <p>Trabajamos con cita para dedicarte el tiempo que necesitas. Si no sabes qué pedir, cuéntanos qué buscas y te asesoramos.</p>
+      </div>
+      <div class="servicios">
+        <article class="serv">
+          <span class="label">Pelo</span>
+          <h3>Peluquería</h3>
+          <ul><li>Corte y peinado</li><li>Color y raíz</li><li>Mechas e iluminación</li><li>Tratamientos de hidratación y reparación</li></ul>
+          <button class="pedir" type="button" data-servicio="Peluquería">Pedir cita</button>
+        </article>
+        <article class="serv">
+          <span class="label">Pelo</span>
+          <h3>Caballero</h3>
+          <ul><li>Corte de caballero</li><li>Arreglo y mantenimiento</li><li>Puntuales y rápidos</li></ul>
+          <button class="pedir" type="button" data-servicio="Caballero">Pedir cita</button>
+        </article>
+        <article class="serv">
+          <span class="label">Eventos</span>
+          <h3>Peinados y novias</h3>
+          <ul><li>Recogidos y semirrecogidos</li><li>Novias, con prueba previa</li><li>Madrinas e invitadas</li></ul>
+          <button class="pedir" type="button" data-servicio="Peinado / novias">Pedir cita</button>
+        </article>
+        <article class="serv">
+          <span class="label">Rostro</span>
+          <h3>Maquillaje</h3>
+          <ul><li>Maquillaje de novia</li><li>Invitadas y eventos</li><li>Maquillaje de día</li></ul>
+          <button class="pedir" type="button" data-servicio="Maquillaje">Pedir cita</button>
+        </article>
+        <article class="serv">
+          <span class="label">Manos y pies</span>
+          <h3>Uñas</h3>
+          <ul><li>Manicura</li><li>Pedicura</li><li>Esmaltado semipermanente</li></ul>
+          <button class="pedir" type="button" data-servicio="Uñas">Pedir cita</button>
+        </article>
+        <article class="serv">
+          <span class="label">Piel</span>
+          <h3>Estética</h3>
+          <ul><li>Diseño de cejas</li><li>Pestañas</li><li>Depilación con cera</li><li>Tratamientos faciales</li></ul>
+          <button class="pedir" type="button" data-servicio="Estética">Pedir cita</button>
+        </article>
+      </div>
+      <div class="servicios" style="border-top:0">
+        <article class="serv laser" style="grid-column:1 / -1">
+          <span class="label">Jornadas periódicas</span>
+          <h3>Depilación láser de alejandrita</h3>
+          <ul><li>Organizamos jornadas en el salón varias veces al año. Los huecos se dan por orden de reserva.</li></ul>
+          <button class="pedir" type="button" data-servicio="Depilación láser de alejandrita">Reservar para la próxima jornada</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="block" id="salon" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">El salón</span><h2>Un sitio tranquilo</h2></div>
+        <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap">
+          <p>Luz natural, madera y espacios separados para cada servicio: tocadores, lavacabezas, cabina de estética y zona de maquillaje y uñas.</p>
+          <div class="flechas"><button type="button" id="g-prev" aria-label="Ver foto anterior">←</button><button type="button" id="g-next" aria-label="Ver foto siguiente">→</button></div>
+        </div>
+      </div>
+      <div class="galeria" id="galeria" tabindex="0" aria-label="Fotos del salón">
+        <figure><img src="tocadores.jpg" alt="Dos tocadores con espejos redondos negros y balda de roble, junto a puertas correderas de madera" width="1400" height="1050" loading="lazy"><figcaption><b>Tocadores</b>corte, color y peinado</figcaption></figure>
+        <figure class="redonda"><img src="lavacabezas.jpg" alt="Dos lavacabezas negros delante de la pared verde oliva con toallas negras" width="1050" height="1400" loading="lazy"><figcaption><b>Lavacabezas</b>tratamientos y lavado</figcaption></figure>
+        <figure><img src="cabina-estetica.jpg" alt="Cabina de estética con camilla blanca, espejo y orquídea" width="1050" height="1400" loading="lazy"><figcaption><b>Cabina</b>estética y láser</figcaption></figure>
+        <figure><img src="maquillaje-unas.jpg" alt="Sala de maquillaje con espejo de bombillas y mesa de manicura" width="1400" height="1050" loading="lazy"><figcaption><b>Maquillaje y uñas</b>novias, eventos y manicura</figcaption></figure>
+        <figure class="redonda"><img src="recepcion.jpg" alt="Recepción con mostrador blanco y negro, pared verde oliva con el logo y puertas de roble al fondo" width="1050" height="1400" loading="lazy"><figcaption><b>Recepción</b>te esperamos aquí</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block horario" id="horario">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Horario</span><h2>Cuándo estamos</h2></div>
+        <p>Abrimos de martes a viernes. Los sábados trabajamos para eventos, como bodas y comuniones, con reserva previa.</p>
+      </div>
+      <div class="semana" id="semana"></div>
+      <div class="eje" aria-hidden="true"><span></span><div class="marcas" id="marcas"></div><span></span></div>
+    </div>
+  </section>
+
+  <section class="block" id="cita">
+    <div class="wrap cita-grid">
+      <div>
+        <span class="label">Cita previa</span>
+        <h2 style="font-size:clamp(40px,5.4vw,68px);line-height:1;font-weight:400;margin-top:12px">Pide tu cita</h2>
+        <ol class="pasos">
+          <li>Rellena el formulario con el servicio y el día que te viene bien.</li>
+          <li>Pulsa «Preparar mensaje» y envíalo por WhatsApp.</li>
+          <li>Te contestamos con la hora exacta para confirmar.</li>
+        </ol>
+        <p class="tel">¿Prefieres llamar? <a href="tel:+34676266872">676 266 872</a></p>
+      </div>
+
+      <form id="form-cita" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" autocomplete="given-name" required placeholder="Tu nombre">
+        </div>
+        <div class="campo">
+          <label for="servicio">Servicio</label>
+          <select id="servicio" name="servicio">
+            <option>Peluquería</option>
+            <option>Caballero</option>
+            <option>Peinado / novias</option>
+            <option>Maquillaje</option>
+            <option>Uñas</option>
+            <option>Estética</option>
+            <option>Depilación láser de alejandrita</option>
+            <option>No lo sé, quiero que me asesoréis</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="fecha">Día preferido</label>
+          <input id="fecha" name="fecha" type="date">
+        </div>
+        <fieldset class="campo">
+          <legend>Franja</legend>
+          <div class="franjas">
+            <label><input type="radio" name="franja" id="f-manana" value="Mañana" checked><span>Mañana</span></label>
+            <label><input type="radio" name="franja" id="f-tarde" value="Tarde"><span>Tarde</span></label>
+          </div>
+        </fieldset>
+        <p class="aviso-campo campo full" id="aviso-fecha" role="status"></p>
+        <div class="campo full">
+          <label for="nota">Algo que debamos saber (opcional)</label>
+          <textarea id="nota" name="nota" placeholder="Por ejemplo: quiero cambiar de color, es para una boda el 14 de febrero…"></textarea>
+        </div>
+        <div class="enviar">
+          <button class="btn" type="submit">Preparar mensaje</button>
+          <span class="mini" id="error-form" role="alert"></span>
+        </div>
+        <div class="resultado" id="resultado">
+          <span class="label">Tu mensaje</span>
+          <pre id="mensaje"></pre>
+          <div class="acciones">
+            <a class="btn" id="wa" href="https://wa.me/34676266872">Enviar por WhatsApp</a>
+            <button class="btn ghost" type="button" id="copiar">Copiar mensaje</button>
+          </div>
+          <p class="mini">Si WhatsApp no se abre, copia el mensaje y mándalo al 676 266 872.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="block" id="opiniones" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="label">Opiniones en Google</span>
+          <div class="nota-google" style="margin-top:12px"><b>4,9</b><span>de 5 · 22 opiniones</span></div>
+        </div>
+        <p><a href="https://www.google.com/maps/place/Purificaci%C3%B3n+Ruiz+-+Sal%C3%B3n+de+Belleza/@37.3238645,-4.3709337,17z">Leer todas las opiniones en Google</a></p>
+      </div>
+      <div class="opiniones">
+        <figure class="op" style="margin:0">
+          <blockquote>«Excelente profesional, hace arte con sus manos.»</blockquote>
+          <cite>Esther G.</cite>
+        </figure>
+        <figure class="op" style="margin:0">
+          <blockquote>«Muy amplio y muy bien preparado… y un trato excelente.»</blockquote>
+          <cite>Piedad P.</cite>
+        </figure>
+        <figure class="op" style="margin:0">
+          <blockquote>«Puntual y rapidez para hombres.»</blockquote>
+          <cite>Juan A.</cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block horario" id="donde">
+    <div class="wrap donde">
+      <div class="plano" aria-hidden="true">
+        <svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="500" height="400" fill="#EAE2D8"/>
+          <g fill="none" stroke="#D6C7B5" stroke-width="18" stroke-linecap="round">
+            <path d="M-20 300 C 120 270, 220 250, 520 180"/>
+            <path d="M150 -20 C 170 120, 200 240, 230 420"/>
+            <path d="M-20 90 L 520 130"/>
+            <path d="M330 -20 C 320 140, 360 280, 420 420"/>
+          </g>
+          <g fill="none" stroke="#A88A6D" stroke-width="1" opacity=".5">
+            <path d="M-20 300 C 120 270, 220 250, 520 180"/>
+            <path d="M150 -20 C 170 120, 200 240, 230 420"/>
+          </g>
+          <circle cx="205" cy="248" r="34" fill="#6E7152" opacity=".2"/>
+          <circle cx="205" cy="248" r="9" fill="#1F1D1B"/>
+          <text x="226" y="228" font-family="Instrument Serif, Georgia, serif" font-style="italic" font-size="22" fill="#1F1D1B">Luis Ocaña, 8</text>
+        </svg>
+      </div>
+      <div>
+        <span class="label">Dónde estamos</span>
+        <p class="dir">C/ Luis Ocaña, 8, local<br>14960 Rute (Córdoba)</p>
+        <ul class="lista-datos">
+          <li>Entrada y aparcamiento accesibles para sillas de ruedas</li>
+          <li>Teléfono y WhatsApp: 676 266 872</li>
+          <li>Instagram: @purificacion.ruiz.belleza</li>
+        </ul>
+        <div class="ctas">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Purificaci%C3%B3n%20Ruiz%20Sal%C3%B3n%20de%20Belleza%2C%20C.%20Luis%20Oca%C3%B1a%208%2C%20Rute">Cómo llegar</a>
+          <a class="btn ghost" href="https://www.instagram.com/purificacion.ruiz.belleza/">Ver Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Purificación Ruiz, inicio"><img src="logo.png" alt="" width="731" height="274" style="height:48px;width:auto;display:block"></a>
+    <span>C/ Luis Ocaña, 8, local · 14960 Rute · 676 266 872</span>
+    <nav aria-label="Pie"><a href="#servicios">Servicios</a><a href="#horario">Horario</a><a href="#cita">Cita</a></nav>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const TEL = "34676266872";
+  // Horario: 0 = domingo … 6 = sábado. Tramos en horas decimales.
+  const HORARIO = {
+    1: { nombre: "Lunes", tramos: [] },
+    2: { nombre: "Martes", tramos: [[9, 14], [16, 20]] },
+    3: { nombre: "Miércoles", tramos: [[9, 14]] },
+    4: { nombre: "Jueves", tramos: [[9, 14], [16, 19]] },
+    5: { nombre: "Viernes", tramos: [[9, 14], [16, 20]] },
+    6: { nombre: "Sábado", tramos: [], texto: "Según evento" },
+    0: { nombre: "Domingo", tramos: [] }
+  };
+  const ORDEN = [1, 2, 3, 4, 5, 6, 0];
+  const INI = 8, FIN = 21;
+  // Próximas jornadas de láser (añadir fechas aquí, formato AAAA-MM-DD).
+  const JORNADAS_LASER = ["2026-12-01"];
+
+  const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  const DIAS = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+
+  function ahoraMadrid() {
+    const p = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", weekday: "short", hour12: false }).formatToParts(new Date());
+    const g = t => p.find(x => x.type === t).value;
+    const wd = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 }[g("weekday")];
+    return { dia: wd, hora: parseInt(g("hour"), 10) % 24 + parseInt(g("minute"), 10) / 60, iso: g("year") + "-" + g("month") + "-" + g("day") };
+  }
+  const fmtH = h => { const hh = Math.floor(h), mm = Math.round((h - hh) * 60); return hh + (mm ? ":" + String(mm).padStart(2, "0") : ":00"); };
+  const fmtT = t => t.map(([a, b]) => a + "–" + b).join(" y ");
+
+  // Semana dibujada
+  const ahora = ahoraMadrid();
+  const sem = document.getElementById("semana");
+  ORDEN.forEach(d => {
+    const h = HORARIO[d];
+    const fila = document.createElement("div");
+    fila.className = "dia" + (d === ahora.dia ? " hoy" : "") + (h.tramos.length ? "" : " cerrado");
+    const barras = h.tramos.map(([a, b]) => `<span class="tramo" style="left:${(a - INI) / (FIN - INI) * 100}%;width:${(b - a) / (FIN - INI) * 100}%"></span>`).join("");
+    fila.innerHTML = `<span class="nom">${h.nombre}</span><div class="barra" aria-hidden="true">${barras}</div><span class="horas">${h.tramos.length ? fmtT(h.tramos) : (h.texto || "Cerrado")}</span>`;
+    sem.appendChild(fila);
+  });
+  const marcas = document.getElementById("marcas");
+  [9, 12, 14, 16, 18, 20].forEach(h => { const s = document.createElement("span"); s.style.left = ((h - INI) / (FIN - INI) * 100) + "%"; s.textContent = h + ":00"; marcas.appendChild(s); });
+
+  // Estado ahora
+  (function estado() {
+    const chip = document.getElementById("estado"), txt = document.getElementById("estado-txt");
+    const hoy = HORARIO[ahora.dia].tramos;
+    const dentro = hoy.find(([a, b]) => ahora.hora >= a && ahora.hora < b);
+    if (dentro) { chip.classList.add("open"); txt.textContent = "Abierto ahora · hasta las " + fmtH(dentro[1]); return; }
+    chip.classList.add("closed");
+    const luego = hoy.find(([a]) => a > ahora.hora);
+    if (luego) { txt.textContent = "Cerrado ahora · abrimos a las " + fmtH(luego[0]); return; }
+    for (let i = 1; i <= 7; i++) {
+      const d = (ahora.dia + i) % 7, t = HORARIO[d].tramos;
+      if (t.length) { txt.textContent = "Cerrado · abrimos el " + DIAS[d] + " a las " + fmtH(t[0][0]); return; }
+    }
+  })();
+
+  // Aviso de láser
+  (function laser() {
+    const prox = JORNADAS_LASER.filter(f => f >= ahora.iso).sort()[0];
+    const el = document.getElementById("laser-fecha");
+    if (!prox) { el.textContent = "Pregúntanos por la próxima jornada"; return; }
+    const [y, m, d] = prox.split("-").map(Number);
+    const wd = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+    el.textContent = "Próxima jornada: " + DIAS[wd] + " " + d + " de " + MESES[m - 1];
+  })();
+
+  // Botones "Pedir cita" que eligen servicio
+  const sel = document.getElementById("servicio");
+  document.querySelectorAll("[data-servicio]").forEach(b => b.addEventListener("click", e => {
+    const v = b.getAttribute("data-servicio");
+    [...sel.options].forEach(o => { if (o.text === v) sel.value = o.value; });
+    if (b.tagName === "BUTTON") document.getElementById("cita").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    comprobar();
+  }));
+
+  // Formulario
+  const fecha = document.getElementById("fecha"), aviso = document.getElementById("aviso-fecha");
+  const tarde = document.getElementById("f-tarde"), manana = document.getElementById("f-manana");
+  fecha.min = ahora.iso;
+  function comprobar() {
+    aviso.textContent = ""; tarde.disabled = false;
+    if (sel.value === "Depilación láser de alejandrita") {
+      const prox = JORNADAS_LASER.filter(f => f >= ahora.iso).sort()[0];
+      if (prox && !fecha.value) fecha.value = prox;
+    }
+    if (!fecha.value) return;
+    const [y, m, d] = fecha.value.split("-").map(Number);
+    const wd = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+    const h = HORARIO[wd];
+    if (wd === 6) { aviso.textContent = "Los sábados solo abrimos para eventos. Te confirmamos si hay hueco."; return; }
+    if (!h.tramos.length) { aviso.textContent = (wd === 1 ? "Los lunes" : "Los domingos") + " está cerrado. Elige de martes a viernes."; return; }
+    if (!h.tramos.some(([a]) => a >= 15)) {
+      tarde.disabled = true; if (tarde.checked) manana.checked = true;
+      aviso.textContent = "Los miércoles solo abrimos por la mañana.";
+    }
+  }
+  fecha.addEventListener("change", comprobar);
+  sel.addEventListener("change", comprobar);
+
+  const form = document.getElementById("form-cita"), err = document.getElementById("error-form");
+  form.addEventListener("submit", e => {
+    e.preventDefault(); err.textContent = "";
+    const nombre = document.getElementById("nombre").value.trim();
+    if (!nombre) { err.textContent = "Escribe tu nombre para que sepamos quién eres."; document.getElementById("nombre").focus(); return; }
+    let cuando = "cuando haya hueco";
+    if (fecha.value) {
+      const [y, m, d] = fecha.value.split("-").map(Number);
+      const wd = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+      cuando = "el " + DIAS[wd] + " " + d + " de " + MESES[m - 1];
+    }
+    const franja = form.querySelector('input[name="franja"]:checked').value.toLowerCase();
+    const nota = document.getElementById("nota").value.trim();
+    const msg = `Hola, soy ${nombre}. Me gustaría pedir cita para ${sel.value.toLowerCase()} ${cuando}, por la ${franja}.` + (nota ? `\n${nota}` : "") + `\n¡Gracias!`;
+    document.getElementById("mensaje").textContent = msg;
+    document.getElementById("wa").href = "https://wa.me/" + TEL + "?text=" + encodeURIComponent(msg);
+    const r = document.getElementById("resultado"); r.classList.add("on");
+    document.getElementById("wa").focus();
+  });
+  document.getElementById("copiar").addEventListener("click", async e => {
+    const b = e.currentTarget;
+    try { await navigator.clipboard.writeText(document.getElementById("mensaje").textContent); b.textContent = "Copiado"; }
+    catch (_) { b.textContent = "Selecciona el texto y cópialo"; }
+    setTimeout(() => (b.textContent = "Copiar mensaje"), 2200);
+  });
+
+
+  // Galería
+  const gal = document.getElementById("galeria");
+  const paso = dir => { const f = gal.querySelector("figure"); const w = f ? f.getBoundingClientRect().width + 18 : 400; gal.scrollBy({ left: dir * w, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); };
+  document.getElementById("g-prev").addEventListener("click", () => paso(-1));
+  document.getElementById("g-next").addEventListener("click", () => paso(1));
+  gal.addEventListener("keydown", e => { if (e.key === "ArrowRight") { e.preventDefault(); paso(1); } if (e.key === "ArrowLeft") { e.preventDefault(); paso(-1); } });
+})();
+</script>
+</body>
+</html>
